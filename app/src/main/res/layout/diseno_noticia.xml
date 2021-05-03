@@ -6,26 +6,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="5dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="501dp"
+        android:layout_margin="5dp"
         app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="376dp"
-            android:layout_height="489dp"
+            android:layout_height="469dp"
             android:layout_margin="10dp">
 
             <ImageView
                 android:id="@+id/disenoimageUrl"
-                android:layout_width="206dp"
-                android:layout_height="173dp"
-                android:layout_marginTop="76dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/ic_baseline_home_24"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/disenopublishedAt" />
 
@@ -33,17 +35,22 @@
                 android:id="@+id/disenopublishedAt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
                 android:hint="Fecha de publicación"
+                android:textColor="#65148D"
                 android:textSize="18sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/disenopublishedBy" />
 
             <TextView
                 android:id="@+id/disenoname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
                 android:hint="Nombre de Post"
+                android:textColor="#65148D"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,8 +61,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="8dp"
                 android:hint="Publicado por"
+                android:textColor="#65148D"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/disenoname" />
 
@@ -63,14 +71,16 @@
                 android:id="@+id/disenodescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="16dp"
                 android:hint="Descripción"
+                android:textColor="#65148D"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/disenoimageUrl"
-                app:layout_constraintVertical_bias="0.208" />
+                app:layout_constraintVertical_bias="0.676" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
