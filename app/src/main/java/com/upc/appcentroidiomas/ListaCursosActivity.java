@@ -26,7 +26,7 @@ public class ListaCursosActivity extends AppCompatActivity {
 
    // ListView lstCursos;
     RecyclerView recyclerCursos;
-    FloatingActionButton btnAgregarCurso;
+    FloatingActionButton btnAgregarCurso, btnIrHorario;
 
     ArrayList<Curso> listaCursos = new ArrayList<>();
     //ArrayAdapter<Curso> cursoArrayAdapter;
@@ -49,6 +49,14 @@ public class ListaCursosActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListaCursosActivity.this, ActivityCursos.class);
+                startActivity(intent);
+            }
+        });
+        btnIrHorario = findViewById(R.id.btnIrHorario);
+        btnIrHorario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaCursosActivity.this,ActivityHorario.class);
                 startActivity(intent);
             }
         });

@@ -2,6 +2,7 @@ package com.upc.appcentroidiomas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -28,7 +29,7 @@ import java.util.List;
 public class ActivityHorario extends AppCompatActivity {
 
     EditText txtCriterio;
-    Button btnObtenerHorario;
+    Button btnObtenerHorario, btnIrNotas;
     ListView lstHorario;
 
     @Override
@@ -45,6 +46,14 @@ public class ActivityHorario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buscarHorario();
+            }
+        });
+        btnIrNotas = findViewById(R.id.btnIrNotas);
+        btnIrNotas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent  intent = new Intent(ActivityHorario.this,NotaActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -65,7 +74,7 @@ public class ActivityHorario extends AppCompatActivity {
                     List<String> items = new ArrayList<>();
                     for (int i=0; i < jsonArray.length(); i++){
                         JSONObject objecto = jsonArray.getJSONObject(i);
-                        items.add(objecto.getString("startTime")+ "  "+objecto.getString("endTime") + "  "+ objecto.getString("name")+ "  "+objecto.getString("date"));
+                        items.add(objecto.getString("name")+ "  --  " +objecto.getString("date")+"  --  "+objecto.getString("startTime")+ "  --  "+objecto.getString("endTime"));
                     }
 
                     ArrayAdapter<String> adaptador = new ArrayAdapter<>(ActivityHorario.this, android.R.layout.simple_list_item_1,items);

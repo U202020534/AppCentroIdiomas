@@ -3,6 +3,10 @@ package com.upc.appcentroidiomas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
 
 import com.upc.appcentroidiomas.api.ApiContants;
 import com.upc.appcentroidiomas.api.NotaApi;
@@ -24,13 +28,25 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NotaActivity extends AppCompatActivity {
     private static int courseId;
+
+    Button btnVerNotas;
+    ListView lstNotas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nota);
-        getNotas();
+
 
         courseId = 1;
+
+        btnVerNotas.findViewById(R.id.btnVerNotas);
+        btnVerNotas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getNotas();
+            }
+        });
     }
     private void getNotas(){
         // can be launched in a separate asynchronous job
@@ -50,6 +66,7 @@ public class NotaActivity extends AppCompatActivity {
                 if (response.isSuccessful()){
                     //Set info to text boxes
 
+
                     CourseDetailedResponse _response = response.body();
                     for (Nota nota : _response.notes) {
                     }
@@ -62,4 +79,5 @@ public class NotaActivity extends AppCompatActivity {
             }
         });
     }
+
 }
