@@ -12,8 +12,9 @@
         android:layout_height="173dp"
         android:layout_marginTop="76dp"
         android:src="@drawable/ic_baseline_person_24"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="134dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profileFirstName"
