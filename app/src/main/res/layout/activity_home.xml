@@ -34,8 +34,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/floatingActionButton6"
-     android:layout_width="63dp"
-     android:layout_height="60dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -47,8 +47,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/floatingActionButton7"
-     android:layout_width="63dp"
-     android:layout_height="72dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +60,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnNoticia"
-     android:layout_width="63dp"
-     android:layout_height="60dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -73,8 +73,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnHorario"
-     android:layout_width="63dp"
-     android:layout_height="72dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +86,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnMapas"
-     android:layout_width="63dp"
-     android:layout_height="72dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -99,8 +99,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnCursos"
-     android:layout_width="63dp"
-     android:layout_height="60dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
@@ -112,8 +112,8 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnPerfil"
-     android:layout_width="63dp"
-     android:layout_height="60dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
      android:clickable="true"
      android:tooltipText="Mi perfil"
      app:backgroundTint="#ffa500"
@@ -127,10 +127,10 @@
 
  <com.google.android.material.floatingactionbutton.FloatingActionButton
      android:id="@+id/btnAtencion"
-     android:layout_width="66dp"
-     android:layout_height="61dp"
-     android:layout_marginEnd="200dp"
-     android:layout_marginBottom="180dp"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
+     android:layout_marginEnd="176dp"
+     android:layout_marginBottom="160dp"
      android:clickable="true"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
