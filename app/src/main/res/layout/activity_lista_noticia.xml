@@ -60,6 +60,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="24dp"
         android:text="Buscar"
+        android:backgroundTint="#8921BC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtCriterio"
         app:layout_constraintTop_toTopOf="parent" />
