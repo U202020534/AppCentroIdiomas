@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
 
-    FloatingActionButton btnMapas, btnCursos, btnPerfil,btnAtencion,btnNoticia, btnHorario;
+    FloatingActionButton btnMapas, btnCursos, btnPerfil, btnAtencion, btnNoticia, btnHorario, btnBoleta, btnChat;
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -59,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
         btnMapas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,ActivityMapa.class);
+                Intent intent = new Intent(HomeActivity.this,ActivityUbicaciones.class);
                 startActivity(intent);
             }
         });
@@ -107,6 +107,23 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnBoleta = findViewById(R.id.btnBoleta);
+        btnBoleta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, InvoiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnChat = findViewById(R.id.btnChat);
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void inicializarFirebase(){
@@ -114,6 +131,4 @@ public class HomeActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
-
-
 }
